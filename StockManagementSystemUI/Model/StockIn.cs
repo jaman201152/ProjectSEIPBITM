@@ -6,14 +6,11 @@ using System.Threading.Tasks;
 
 namespace StockManagementSystemUI.Model
 {
-   public class Item
+   public class StockIn
     {
-       public int Id { get; set; }
        public long CategoryId { get; set; }
-       public long CompanyId { get; set; }
-
-       public string Name { get; set; }
-       public int ReorderLabel { get; set; }
-
+       public long CampanyId { get; set; }
+       public long ItemId { get; set; }
+       public int AvailableQuantity { get; set; }
     }
 }

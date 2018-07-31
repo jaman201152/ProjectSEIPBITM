@@ -46,11 +46,14 @@
   <ItemGroup>
     <Compile Include="BLL\CategoryManager.cs" />
     <Compile Include="BLL\ItemManager.cs" />
+    <Compile Include="BLL\StockInManager.cs" />
     <Compile Include="DAL\CategoryRepository.cs" />
     <Compile Include="DAL\ItemRepository.cs" />
+    <Compile Include="DAL\StockInRepository.cs" />
     <Compile Include="Model\Common.cs" />
     <Compile Include="Model\Item.cs" />
     <Compile Include="Model\ItemCreateVM.cs" />
+    <Compile Include="Model\StockIn.cs" />
     <Compile Include="UI\CetegoryFormUi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -142,6 +145,8 @@
     </EmbeddedResource>
     <None Include="Properties\DataSources\StockManagementSystemUI.Model.Category.datasource" />
     <None Include="Properties\DataSources\StockManagementSystemUI.Model.Company.datasource" />
+    <None Include="Properties\DataSources\StockManagementSystemUI.Model.Item.datasource" />
+    <None Include="Properties\DataSources\StockManagementSystemUI.Model.StockIn.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
