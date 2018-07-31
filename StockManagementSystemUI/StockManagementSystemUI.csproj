@@ -44,36 +44,99 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DashboardFormUI.cs">
+    <Compile Include="BLL\CategoryManager.cs" />
+    <Compile Include="DAL\CategoryRepository.cs" />
+    <Compile Include="UI\CetegoryFormUi.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DashboardFormUI.Designer.cs">
+    <Compile Include="UI\CetegoryFormUi.Designer.cs">
+      <DependentUpon>CetegoryFormUi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BLL\CompanyManager.cs" />
+    <Compile Include="DAL\CompanyRepository.cs" />
+    <Compile Include="UI\CompanyUi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\CompanyUi.Designer.cs">
+      <DependentUpon>CompanyUi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\DashboardFormUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\DashboardFormUI.Designer.cs">
       <DependentUpon>DashboardFormUI.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="UI\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
+    <Compile Include="UI\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="UI\ItemFormUi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\ItemFormUi.Designer.cs">
+      <DependentUpon>ItemFormUi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Category.cs" />
+    <Compile Include="Model\Company.cs" />
     <Compile Include="Model\Login.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="DashboardFormUI.resx">
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="UI\SearchAndView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\SearchAndView.Designer.cs">
+      <DependentUpon>SearchAndView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\StockInUi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\StockInUi.Designer.cs">
+      <DependentUpon>StockInUi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UI\StockOutUi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UI\StockOutUi.Designer.cs">
+      <DependentUpon>StockOutUi.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="UI\CetegoryFormUi.resx">
+      <DependentUpon>CetegoryFormUi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\CompanyUi.resx">
+      <DependentUpon>CompanyUi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\DashboardFormUI.resx">
       <DependentUpon>DashboardFormUI.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
+    <EmbeddedResource Include="UI\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\ItemFormUi.resx">
+      <DependentUpon>ItemFormUi.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
+    <EmbeddedResource Include="UI\SearchAndView.resx">
+      <DependentUpon>SearchAndView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\StockInUi.resx">
+      <DependentUpon>StockInUi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UI\StockOutUi.resx">
+      <DependentUpon>StockOutUi.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\DataSources\StockManagementSystemUI.Model.Category.datasource" />
+    <None Include="Properties\DataSources\StockManagementSystemUI.Model.Company.datasource" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -86,6 +149,31 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\dashbord.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bac2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\item.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\in.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bac1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cate.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\out.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\out1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

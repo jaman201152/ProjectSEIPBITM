@@ -29,7 +29,7 @@ namespace StockManagementSystemUI
             login.Password = passwordTextBox.Text;
 
             // connect to server to check user data
-            string connectionString = @"server=.\SQLEXPRESS; database=StockManagementSystemBatch50; integrated security = true ";
+            string connectionString = @"server=DESKTOP-BBIGD1E; database=StockManagementSystemBatch50; integrated security = true ";
             SqlConnection con = new SqlConnection(connectionString);
 
             string query = @"SELECT COUNT(*) FROM Login WHERE Username='"+login.Username+"' AND Password='"+login.Password+"' ";
