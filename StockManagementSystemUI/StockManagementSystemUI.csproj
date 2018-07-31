@@ -45,8 +45,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BLL\CategoryManager.cs" />
+    <Compile Include="BLL\ItemManager.cs" />
     <Compile Include="DAL\CategoryRepository.cs" />
+    <Compile Include="DAL\ItemRepository.cs" />
     <Compile Include="Model\Common.cs" />
+    <Compile Include="Model\Item.cs" />
+    <Compile Include="Model\ItemCreateVM.cs" />
     <Compile Include="UI\CetegoryFormUi.cs">
       <SubType>Form</SubType>
     </Compile>
