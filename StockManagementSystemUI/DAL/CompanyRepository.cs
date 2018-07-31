@@ -12,13 +12,14 @@ namespace StockManagementSystemUI.Company.DAL
 {
     public class CompanyRepository
     {
-        string connectionString = @"server=DESKTOP-BBIGD1E; database=StockManagementSystemBatch50; integrated security = true ";
+
+     
         public bool Add(Model.Company company)
         {
 
-            SqlConnection con = new SqlConnection(connectionString);
+            SqlConnection con = new SqlConnection(Common.ConnectionString());
 
-            string query = @"INSERT INTO Companys VALUES('" + company.Name + "')";
+            string query = @"INSERT INTO Companies VALUES('" + company.Name + "')";
 
             SqlCommand command = new SqlCommand(query, con);
             con.Open();
@@ -32,8 +33,8 @@ namespace StockManagementSystemUI.Company.DAL
 
         internal DataTable CategoryLode(CompanyManager companyManager)
         {
-            SqlConnection con = new SqlConnection(connectionString);
-            string query = "SELECT * FROM Companys ORDER BY Id  DESC";
+            SqlConnection con = new SqlConnection(Common.ConnectionString());
+            string query = "SELECT * FROM Companies ORDER BY Id  DESC";
             SqlCommand com = new SqlCommand(query, con);
             con.Open();
             DataTable dt = new DataTable();

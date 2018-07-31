@@ -12,13 +12,13 @@ namespace StockManagementSystemUI.Category.DAL
 {
     public class CategoryRepository
     {
-        string connectionString = @"server=DESKTOP-BBIGD1E; database=StockManagementSystemBatch50; integrated security = true ";
+      
         public bool Add(Model.Category category)
         {
 
-            SqlConnection con = new SqlConnection(connectionString);
+            SqlConnection con = new SqlConnection(Common.ConnectionString());
 
-            string query = @"INSERT INTO Categorys VALUES('" + category.Name + "')";
+            string query = @"INSERT INTO Categories VALUES('" + category.Name + "')";
 
             SqlCommand command = new SqlCommand(query, con);
             con.Open();
@@ -32,8 +32,8 @@ namespace StockManagementSystemUI.Category.DAL
 
         internal DataTable CategoryLode(CategoryManager categoryManager)
         {
-            SqlConnection con = new SqlConnection(connectionString);
-            string query = "SELECT * FROM Categorys ORDER BY Id  DESC";
+            SqlConnection con = new SqlConnection(Common.ConnectionString());
+            string query = "SELECT * FROM Categories ORDER BY Id  DESC";
             SqlCommand com = new SqlCommand(query, con);
             con.Open();
             DataTable dt = new DataTable();

@@ -29,8 +29,8 @@ namespace StockManagementSystemUI
             login.Password = passwordTextBox.Text;
 
             // connect to server to check user data
-            string connectionString = @"server=DESKTOP-BBIGD1E; database=StockManagementSystemBatch50; integrated security = true ";
-            SqlConnection con = new SqlConnection(connectionString);
+         
+            SqlConnection con = new SqlConnection(Common.ConnectionString());
 
             string query = @"SELECT COUNT(*) FROM Login WHERE Username='"+login.Username+"' AND Password='"+login.Password+"' ";
 

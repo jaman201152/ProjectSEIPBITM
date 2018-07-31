@@ -12,6 +12,6 @@ namespace StockManagementSystemUI.Model
 
        public string Password { get; set; }
 
-        public string Name { get; set; }
+       
     }
 }
