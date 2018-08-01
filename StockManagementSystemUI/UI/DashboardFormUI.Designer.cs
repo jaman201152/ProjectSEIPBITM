@@ -43,29 +43,33 @@
             // 
             this.ViewSalesButton.BackColor = System.Drawing.Color.SteelBlue;
             this.ViewSalesButton.ForeColor = System.Drawing.Color.Transparent;
-            this.ViewSalesButton.Location = new System.Drawing.Point(364, 311);
+            this.ViewSalesButton.Location = new System.Drawing.Point(485, 383);
+            this.ViewSalesButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ViewSalesButton.Name = "ViewSalesButton";
-            this.ViewSalesButton.Size = new System.Drawing.Size(118, 32);
+            this.ViewSalesButton.Size = new System.Drawing.Size(157, 39);
             this.ViewSalesButton.TabIndex = 16;
             this.ViewSalesButton.Text = "View Sales";
             this.ViewSalesButton.UseVisualStyleBackColor = false;
             // 
             // SearchButton
             // 
-            this.SearchButton.Location = new System.Drawing.Point(364, 282);
+            this.SearchButton.Location = new System.Drawing.Point(485, 347);
+            this.SearchButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SearchButton.Name = "SearchButton";
-            this.SearchButton.Size = new System.Drawing.Size(118, 32);
+            this.SearchButton.Size = new System.Drawing.Size(157, 39);
             this.SearchButton.TabIndex = 15;
             this.SearchButton.Text = "Search and Summary";
             this.SearchButton.UseVisualStyleBackColor = true;
+            this.SearchButton.Click += new System.EventHandler(this.SearchButton_Click);
             // 
             // StokOutButton
             // 
             this.StokOutButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.StokOutButton.ForeColor = System.Drawing.Color.Transparent;
-            this.StokOutButton.Location = new System.Drawing.Point(364, 250);
+            this.StokOutButton.Location = new System.Drawing.Point(485, 308);
+            this.StokOutButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.StokOutButton.Name = "StokOutButton";
-            this.StokOutButton.Size = new System.Drawing.Size(118, 35);
+            this.StokOutButton.Size = new System.Drawing.Size(157, 43);
             this.StokOutButton.TabIndex = 14;
             this.StokOutButton.Text = "Stok Out";
             this.StokOutButton.UseVisualStyleBackColor = false;
@@ -73,9 +77,10 @@
             // 
             // StokInButton
             // 
-            this.StokInButton.Location = new System.Drawing.Point(364, 222);
+            this.StokInButton.Location = new System.Drawing.Point(485, 273);
+            this.StokInButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.StokInButton.Name = "StokInButton";
-            this.StokInButton.Size = new System.Drawing.Size(118, 31);
+            this.StokInButton.Size = new System.Drawing.Size(157, 38);
             this.StokInButton.TabIndex = 13;
             this.StokInButton.Text = "Stok In";
             this.StokInButton.UseVisualStyleBackColor = true;
@@ -85,9 +90,10 @@
             // 
             this.ItemButton.BackColor = System.Drawing.Color.Goldenrod;
             this.ItemButton.ForeColor = System.Drawing.Color.Transparent;
-            this.ItemButton.Location = new System.Drawing.Point(364, 185);
+            this.ItemButton.Location = new System.Drawing.Point(485, 228);
+            this.ItemButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.ItemButton.Name = "ItemButton";
-            this.ItemButton.Size = new System.Drawing.Size(118, 35);
+            this.ItemButton.Size = new System.Drawing.Size(157, 43);
             this.ItemButton.TabIndex = 12;
             this.ItemButton.Text = "Item Setup";
             this.ItemButton.UseVisualStyleBackColor = false;
@@ -95,9 +101,10 @@
             // 
             // CompanyButton
             // 
-            this.CompanyButton.Location = new System.Drawing.Point(364, 157);
+            this.CompanyButton.Location = new System.Drawing.Point(485, 193);
+            this.CompanyButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CompanyButton.Name = "CompanyButton";
-            this.CompanyButton.Size = new System.Drawing.Size(118, 31);
+            this.CompanyButton.Size = new System.Drawing.Size(157, 38);
             this.CompanyButton.TabIndex = 11;
             this.CompanyButton.Text = "Company";
             this.CompanyButton.UseVisualStyleBackColor = true;
@@ -107,9 +114,10 @@
             // 
             this.CategoryButton.BackColor = System.Drawing.Color.OliveDrab;
             this.CategoryButton.ForeColor = System.Drawing.Color.Transparent;
-            this.CategoryButton.Location = new System.Drawing.Point(364, 128);
+            this.CategoryButton.Location = new System.Drawing.Point(485, 158);
+            this.CategoryButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CategoryButton.Name = "CategoryButton";
-            this.CategoryButton.Size = new System.Drawing.Size(118, 33);
+            this.CategoryButton.Size = new System.Drawing.Size(157, 41);
             this.CategoryButton.TabIndex = 10;
             this.CategoryButton.Text = "Category";
             this.CategoryButton.UseVisualStyleBackColor = false;
@@ -119,10 +127,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.White;
-            this.label1.Font = new System.Drawing.Font("Ravie", 27.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(94, 9);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(125, 11);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(243, 50);
+            this.label1.Size = new System.Drawing.Size(225, 54);
             this.label1.TabIndex = 17;
             this.label1.Text = "Welcome";
             // 
@@ -130,19 +139,20 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.White;
-            this.label2.Font = new System.Drawing.Font("Snap ITC", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(180, 68);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(240, 84);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(56, 37);
+            this.label2.Size = new System.Drawing.Size(62, 42);
             this.label2.TabIndex = 18;
             this.label2.Text = "To";
             // 
             // DashboardFormUI
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::StockManagementSystemUI.Properties.Resources.dashbord;
-            this.ClientSize = new System.Drawing.Size(504, 365);
+            this.ClientSize = new System.Drawing.Size(672, 449);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.ViewSalesButton);
@@ -152,6 +162,7 @@
             this.Controls.Add(this.ItemButton);
             this.Controls.Add(this.CompanyButton);
             this.Controls.Add(this.CategoryButton);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "DashboardFormUI";
             this.Text = "DashboardFormUI";
             this.ResumeLayout(false);

@@ -3,6 +3,7 @@ using StockManagementSystemUI.Company.UI;
 using StockManagementSystemUI.Item.UI;
 using StockManagementSystemUI.StockIn.UI;
 using StockManagementSystemUI.StokOut.UI;
+using StockManagementSystemUI.SearchAndView.UI;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -57,6 +58,12 @@ namespace StockManagementSystemUI
             this.Hide();
             StockOutUi stockOut = new StockOutUi();
             stockOut.ShowDialog();
+        }
+
+        private void SearchButton_Click(object sender, EventArgs e)
+        {
+           
+            
         }
     }
 }
