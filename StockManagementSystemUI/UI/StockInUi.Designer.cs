@@ -40,19 +40,19 @@
             this.label5 = new System.Windows.Forms.Label();
             this.itemComboBox = new System.Windows.Forms.ComboBox();
             this.itemBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.reOrderLabel = new System.Windows.Forms.Label();
+            this.availableQuantityLabel = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.stokInTextBox = new System.Windows.Forms.TextBox();
             this.CancelButton = new System.Windows.Forms.Button();
-            this.stockInBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.stockInBindingSource = new System.Windows.Forms.BindingSource(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.companyBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.categoryBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.itemBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.stockInBindingSource)).BeginInit();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.stockInBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // SaveButton
@@ -96,6 +96,7 @@
             this.companyComboBox.Size = new System.Drawing.Size(178, 21);
             this.companyComboBox.TabIndex = 13;
             this.companyComboBox.ValueMember = "Id";
+            this.companyComboBox.SelectedIndexChanged += new System.EventHandler(this.companyComboBox_SelectedIndexChanged);
             // 
             // companyBindingSource
             // 
@@ -121,6 +122,7 @@
             this.categoryComboBox.Size = new System.Drawing.Size(178, 21);
             this.categoryComboBox.TabIndex = 9;
             this.categoryComboBox.ValueMember = "Id";
+            this.categoryComboBox.SelectedIndexChanged += new System.EventHandler(this.categoryComboBox_SelectedIndexChanged);
             // 
             // categoryBindingSource
             // 
@@ -146,30 +148,29 @@
             this.itemComboBox.Size = new System.Drawing.Size(178, 21);
             this.itemComboBox.TabIndex = 19;
             this.itemComboBox.ValueMember = "Id";
+            this.itemComboBox.SelectedIndexChanged += new System.EventHandler(this.itemComboBox_SelectedIndexChanged);
             // 
             // itemBindingSource
             // 
             this.itemBindingSource.DataSource = typeof(StockManagementSystemUI.Model.Item);
             // 
-            // label6
+            // reOrderLabel
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(214, 152);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(49, 16);
-            this.label6.TabIndex = 20;
-            this.label6.Text = "<view>";
+            this.reOrderLabel.AutoSize = true;
+            this.reOrderLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.reOrderLabel.Location = new System.Drawing.Point(214, 152);
+            this.reOrderLabel.Name = "reOrderLabel";
+            this.reOrderLabel.Size = new System.Drawing.Size(0, 16);
+            this.reOrderLabel.TabIndex = 20;
             // 
-            // label7
+            // availableQuantityLabel
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(214, 188);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(49, 16);
-            this.label7.TabIndex = 21;
-            this.label7.Text = "<view>";
+            this.availableQuantityLabel.AutoSize = true;
+            this.availableQuantityLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.availableQuantityLabel.Location = new System.Drawing.Point(214, 188);
+            this.availableQuantityLabel.Name = "availableQuantityLabel";
+            this.availableQuantityLabel.Size = new System.Drawing.Size(0, 16);
+            this.availableQuantityLabel.TabIndex = 21;
             // 
             // label8
             // 
@@ -200,10 +201,6 @@
             this.CancelButton.UseVisualStyleBackColor = true;
             this.CancelButton.Click += new System.EventHandler(this.CancelButton_Click);
             // 
-            // stockInBindingSource
-            // 
-            this.stockInBindingSource.DataSource = typeof(StockManagementSystemUI.Model.StockIn);
-            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label2);
@@ -212,9 +209,9 @@
             this.groupBox1.Controls.Add(this.categoryComboBox);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Controls.Add(this.availableQuantityLabel);
             this.groupBox1.Controls.Add(this.companyComboBox);
-            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.reOrderLabel);
             this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.itemComboBox);
             this.groupBox1.Controls.Add(this.label4);
@@ -237,6 +234,10 @@
             this.label2.TabIndex = 36;
             this.label2.Text = "Company";
             // 
+            // stockInBindingSource
+            // 
+            this.stockInBindingSource.DataSource = typeof(StockManagementSystemUI.Model.StockIn);
+            // 
             // StockInUi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -249,9 +250,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.companyBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.categoryBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.itemBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.stockInBindingSource)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.stockInBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -266,8 +267,8 @@
         private System.Windows.Forms.ComboBox categoryComboBox;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox itemComboBox;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label reOrderLabel;
+        private System.Windows.Forms.Label availableQuantityLabel;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox stokInTextBox;
         private System.Windows.Forms.Button CancelButton;

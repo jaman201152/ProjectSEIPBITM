@@ -37,8 +37,10 @@
             this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.companyBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.companyDataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.companyBindingSource)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // companyDataGridView1
@@ -53,7 +55,7 @@
             this.idDataGridViewTextBoxColumn,
             this.nameDataGridViewTextBoxColumn});
             this.companyDataGridView1.DataSource = this.companyBindingSource;
-            this.companyDataGridView1.Location = new System.Drawing.Point(20, 183);
+            this.companyDataGridView1.Location = new System.Drawing.Point(80, 207);
             this.companyDataGridView1.Name = "companyDataGridView1";
             this.companyDataGridView1.ReadOnly = true;
             this.companyDataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -63,7 +65,7 @@
             // nameTextBox
             // 
             this.nameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nameTextBox.Location = new System.Drawing.Point(98, 60);
+            this.nameTextBox.Location = new System.Drawing.Point(102, 41);
             this.nameTextBox.Name = "nameTextBox";
             this.nameTextBox.Size = new System.Drawing.Size(233, 22);
             this.nameTextBox.TabIndex = 10;
@@ -72,7 +74,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(29, 62);
+            this.label1.Location = new System.Drawing.Point(33, 43);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(52, 18);
             this.label1.TabIndex = 9;
@@ -81,7 +83,7 @@
             // SaveButton
             // 
             this.SaveButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SaveButton.Location = new System.Drawing.Point(98, 109);
+            this.SaveButton.Location = new System.Drawing.Point(102, 90);
             this.SaveButton.Name = "SaveButton";
             this.SaveButton.Size = new System.Drawing.Size(77, 29);
             this.SaveButton.TabIndex = 8;
@@ -92,7 +94,7 @@
             // CancelButton
             // 
             this.CancelButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CancelButton.Location = new System.Drawing.Point(252, 109);
+            this.CancelButton.Location = new System.Drawing.Point(256, 90);
             this.CancelButton.Name = "CancelButton";
             this.CancelButton.Size = new System.Drawing.Size(79, 29);
             this.CancelButton.TabIndex = 12;
@@ -119,22 +121,33 @@
             // 
             this.companyBindingSource.DataSource = typeof(StockManagementSystemUI.Model.Company);
             // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.nameTextBox);
+            this.groupBox1.Controls.Add(this.CancelButton);
+            this.groupBox1.Controls.Add(this.SaveButton);
+            this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Location = new System.Drawing.Point(122, 12);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(368, 165);
+            this.groupBox1.TabIndex = 13;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Add New Company";
+            // 
             // CompanyUi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(557, 376);
-            this.Controls.Add(this.CancelButton);
+            this.ClientSize = new System.Drawing.Size(676, 400);
+            this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.companyDataGridView1);
-            this.Controls.Add(this.nameTextBox);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.SaveButton);
             this.Name = "CompanyUi";
             this.Text = "CompanyUi";
             ((System.ComponentModel.ISupportInitialize)(this.companyDataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.companyBindingSource)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -148,5 +161,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
         private System.Windows.Forms.BindingSource companyBindingSource;
         private System.Windows.Forms.Button CancelButton;
+        private System.Windows.Forms.GroupBox groupBox1;
     }
 }

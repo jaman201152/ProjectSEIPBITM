@@ -8,6 +8,7 @@ namespace StockManagementSystemUI.Model
 {
    public class StockIn
     {
+       public long Id { get; set; }
        public long CategoryId { get; set; }
        public long CampanyId { get; set; }
        public long ItemId { get; set; }

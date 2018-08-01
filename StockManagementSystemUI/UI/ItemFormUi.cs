@@ -15,6 +15,8 @@ namespace StockManagementSystemUI.Item.UI
 {
     public partial class ItemFormUi : Form
     {
+
+        SqlConnection _con = new SqlConnection(Common.ConnectionString());
         public ItemFormUi()
         {
             InitializeComponent();
@@ -43,26 +45,26 @@ namespace StockManagementSystemUI.Item.UI
         {
 
             // For Company Name Combo Box
-            SqlConnection con = new SqlConnection(Common.ConnectionString());
+        
             string query = "SELECT * FROM Companies";
-            SqlCommand command = new SqlCommand(query, con);
-            con.Open();
+            SqlCommand command = new SqlCommand(query, _con);
+            _con.Open();
             DataTable dt = new DataTable();
             SqlDataAdapter da = new SqlDataAdapter(command);
             da.Fill(dt);
             companyBindingSource.DataSource = dt;
-            con.Close();
+            _con.Close();
 
             // For Category Name Combo Box
 
             string queryCat = "SELECT * FROM Categories";
-            SqlCommand comm = new SqlCommand(queryCat, con);
-            con.Open();
+            SqlCommand comm = new SqlCommand(queryCat, _con);
+            _con.Open();
             DataTable dtCat = new DataTable();
             SqlDataAdapter daCat = new SqlDataAdapter(comm);
             daCat.Fill(dtCat);
             categoryBindingSource.DataSource = dtCat;
-            con.Close();
+            _con.Close();
 
 
 
@@ -78,15 +80,35 @@ namespace StockManagementSystemUI.Item.UI
             item.CompanyId = Convert.ToInt64(companyComboBox.SelectedValue);
             item.Name = itemNameTextBox.Text;
             item.ReorderLabel = Convert.ToInt32(recorderTextBox.Text);
-            bool isAdded = _itemManager.Add(item);
-            if (isAdded)
+
+            string QueryDuplicate = @"SELECT COUNT(*) FROM Items where Name='" + item.Name
+                                    + "' and CategoryId='" + item.CategoryId + "' and CompanyId='" + item.CompanyId + "' ";
+
+            SqlCommand commandDuplicateCheck = new SqlCommand(QueryDuplicate, _con);
+            DataTable ds = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter(commandDuplicateCheck);
+            da.Fill(ds);
+            if (ds.Rows[0][0].ToString() == "1")
             {
-                MessageBox.Show("Successfully Added. ");
+                string msg = "Duplicate Entry not Allowed.";
+                MessageBox.Show(msg);
             }
             else
             {
-                MessageBox.Show("Sry! Added Failed.");
+                bool isAdded = _itemManager.Add(item);
+                if (isAdded)
+                {
+                    MessageBox.Show("Successfully Added. ");
+                    itemNameTextBox.Clear();
+                    recorderTextBox.Clear();
+                }
+                else
+                {
+                    MessageBox.Show("Sorry! Added Failed.");
+                }
             }
+
+       
 
 
         }
