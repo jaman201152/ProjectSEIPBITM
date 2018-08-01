@@ -11,7 +11,7 @@ namespace StockManagementSystemUI.Model
 
         public static string ConnectionString()
         {
-            string conString = @"server=PC-301-15\SQLEXPRESS; database=StockManagementSystemBatch50; integrated security=true";
+            string conString = @"server=DESKTOP-FD57AFH\SQLEXPRESS; database=StockManagementSystemBatch50; integrated security=true";
             return conString;
         }
 

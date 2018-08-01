@@ -44,7 +44,7 @@
             // nameTextBox
             // 
             this.nameTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.nameTextBox.Location = new System.Drawing.Point(91, 68);
+            this.nameTextBox.Location = new System.Drawing.Point(159, 66);
             this.nameTextBox.Name = "nameTextBox";
             this.nameTextBox.Size = new System.Drawing.Size(208, 22);
             this.nameTextBox.TabIndex = 6;
@@ -54,7 +54,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(22, 70);
+            this.label1.Location = new System.Drawing.Point(61, 67);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(52, 18);
             this.label1.TabIndex = 5;
@@ -63,9 +63,9 @@
             // SaveButton
             // 
             this.SaveButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SaveButton.Location = new System.Drawing.Point(201, 118);
+            this.SaveButton.Location = new System.Drawing.Point(159, 118);
             this.SaveButton.Name = "SaveButton";
-            this.SaveButton.Size = new System.Drawing.Size(98, 29);
+            this.SaveButton.Size = new System.Drawing.Size(77, 29);
             this.SaveButton.TabIndex = 4;
             this.SaveButton.Text = "Save";
             this.SaveButton.UseVisualStyleBackColor = true;
@@ -76,6 +76,7 @@
             this.categoryDataGridView1.AllowUserToAddRows = false;
             this.categoryDataGridView1.AllowUserToDeleteRows = false;
             this.categoryDataGridView1.AutoGenerateColumns = false;
+            this.categoryDataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.categoryDataGridView1.BackgroundColor = System.Drawing.Color.WhiteSmoke;
             this.categoryDataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.categoryDataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -85,7 +86,8 @@
             this.categoryDataGridView1.Location = new System.Drawing.Point(13, 191);
             this.categoryDataGridView1.Name = "categoryDataGridView1";
             this.categoryDataGridView1.ReadOnly = true;
-            this.categoryDataGridView1.Size = new System.Drawing.Size(339, 150);
+            this.categoryDataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.categoryDataGridView1.Size = new System.Drawing.Size(509, 150);
             this.categoryDataGridView1.TabIndex = 7;
             // 
             // idDataGridViewTextBoxColumn
@@ -110,9 +112,9 @@
             // CancelButton
             // 
             this.CancelButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CancelButton.Location = new System.Drawing.Point(91, 118);
+            this.CancelButton.Location = new System.Drawing.Point(290, 118);
             this.CancelButton.Name = "CancelButton";
-            this.CancelButton.Size = new System.Drawing.Size(98, 29);
+            this.CancelButton.Size = new System.Drawing.Size(77, 29);
             this.CancelButton.TabIndex = 13;
             this.CancelButton.Text = "Cancel";
             this.CancelButton.UseVisualStyleBackColor = true;
