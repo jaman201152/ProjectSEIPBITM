@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -37,15 +38,32 @@ namespace StockManagementSystemUI.Company.UI
         {
             Model.Company company = new Model.Company();
             company.Name = nameTextBox.Text;
-            bool isAdded = _companyManager.Add(company: company);
-            if (isAdded)
-            {
-                MessageBox.Show("added");
-                CompanyLode();
-                return;
 
+            SqlConnection _con = new SqlConnection(Model.Common.ConnectionString());
+            string QueryDuplicate = @"SELECT COUNT(*) FROM Companies where Name='" + company.Name + "' ";
+
+            SqlCommand commandDuplicateCheck = new SqlCommand(QueryDuplicate, _con);
+            DataTable ds = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter(commandDuplicateCheck);
+            da.Fill(ds);
+            if (ds.Rows[0][0].ToString() == "1")
+            {
+                string msg = "Duplicate Entry not Allowed.";
+                MessageBox.Show(msg);
             }
-            MessageBox.Show("failed");
+            else
+            {
+                bool isAdded = _companyManager.Add(company: company);
+                if (isAdded)
+                {
+                    MessageBox.Show("Successfully Saved.");
+                    CompanyLode();
+                    return;
+
+                }
+                MessageBox.Show("Sory! Saved failed");
+            }
+           
         }
 
         private void CancelButton_Click(object sender, EventArgs e)

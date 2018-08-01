@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -29,20 +30,38 @@ namespace StockManagementSystemUI.Category.UI
 
 
         }
-
+        SqlConnection _con = new SqlConnection(Model.Common.ConnectionString());
         private void SaveButton_Click(object sender, EventArgs e)
         {
             Model.Category category = new Model.Category();
             category.Name = nameTextBox.Text;
-            bool isAdded = _CategoryManager.Add(category: category);
-            if (isAdded)
-            {
-                MessageBox.Show("added");
-                CategoryLode();
-                return;
 
+
+            string QueryDuplicate = @"SELECT COUNT(*) FROM Categories where Name='" + category.Name + "' ";
+
+            SqlCommand commandDuplicateCheck = new SqlCommand(QueryDuplicate, _con);
+            DataTable ds = new DataTable();
+            SqlDataAdapter da = new SqlDataAdapter(commandDuplicateCheck);
+            da.Fill(ds);
+            if (ds.Rows[0][0].ToString() == "1")
+            {
+                string msg = "Duplicate Entry not Allowed.";
+                MessageBox.Show(msg);
             }
-            MessageBox.Show("failed");
+            else
+            {
+                bool isAdded = _CategoryManager.Add(category: category);
+                if (isAdded)
+                {
+                    MessageBox.Show("Successfuly Saved.");
+                    CategoryLode();
+                    return;
+
+                }
+                MessageBox.Show("Sorry! failed.");
+            }
+
+           
 
 
 

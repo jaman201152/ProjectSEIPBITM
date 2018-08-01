@@ -13,36 +13,40 @@ namespace StockManagementSystemUI.Company.DAL
     public class CompanyRepository
     {
 
-     
+        SqlConnection _con = new SqlConnection(Common.ConnectionString());
         public bool Add(Model.Company company)
         {
 
-            SqlConnection con = new SqlConnection(Common.ConnectionString());
-
             string query = @"INSERT INTO Companies VALUES('" + company.Name + "')";
 
-            SqlCommand command = new SqlCommand(query, con);
-            con.Open();
+            SqlCommand command = new SqlCommand(query, _con);
+            _con.Open();
 
             bool isRowAffectred = command.ExecuteNonQuery() > 0;
 
-            con.Close();
+            _con.Close();
 
             return isRowAffectred;
         }
 
         internal DataTable CategoryLode(CompanyManager companyManager)
         {
-            SqlConnection con = new SqlConnection(Common.ConnectionString());
             string query = "SELECT * FROM Companies ORDER BY Id  DESC";
-            SqlCommand com = new SqlCommand(query, con);
-            con.Open();
+            SqlCommand com = new SqlCommand(query, _con);
+            _con.Open();
             DataTable dt = new DataTable();
             SqlDataAdapter da = new SqlDataAdapter(com);
             da.Fill(dt);
-            con.Close();
+            _con.Close();
             return dt;
         }
+
+      
+   
+          
+            
+     
+
         //internal bool Add(Model.Company company)
         //{
         //    throw new NotImplementedException();

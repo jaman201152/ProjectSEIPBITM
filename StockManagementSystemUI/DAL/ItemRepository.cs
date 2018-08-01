@@ -27,5 +27,6 @@ namespace StockManagementSystemUI.DAL
 
             return isRowAffectred;
         }
+
     }
 }
