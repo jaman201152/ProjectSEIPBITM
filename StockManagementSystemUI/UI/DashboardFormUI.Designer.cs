@@ -44,7 +44,11 @@
             this.ViewSalesButton.BackColor = System.Drawing.Color.SteelBlue;
             this.ViewSalesButton.ForeColor = System.Drawing.Color.Transparent;
             this.ViewSalesButton.Location = new System.Drawing.Point(485, 383);
+<<<<<<< HEAD
             this.ViewSalesButton.Margin = new System.Windows.Forms.Padding(4);
+=======
+            this.ViewSalesButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+>>>>>>> 803a3ff4f15a443404342623b3e98c9344f8c985
             this.ViewSalesButton.Name = "ViewSalesButton";
             this.ViewSalesButton.Size = new System.Drawing.Size(157, 39);
             this.ViewSalesButton.TabIndex = 16;
@@ -54,7 +58,11 @@
             // SearchButton
             // 
             this.SearchButton.Location = new System.Drawing.Point(485, 347);
+<<<<<<< HEAD
             this.SearchButton.Margin = new System.Windows.Forms.Padding(4);
+=======
+            this.SearchButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+>>>>>>> 803a3ff4f15a443404342623b3e98c9344f8c985
             this.SearchButton.Name = "SearchButton";
             this.SearchButton.Size = new System.Drawing.Size(157, 39);
             this.SearchButton.TabIndex = 15;
@@ -67,7 +75,11 @@
             this.StokOutButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.StokOutButton.ForeColor = System.Drawing.Color.Transparent;
             this.StokOutButton.Location = new System.Drawing.Point(485, 308);
+<<<<<<< HEAD
             this.StokOutButton.Margin = new System.Windows.Forms.Padding(4);
+=======
+            this.StokOutButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+>>>>>>> 803a3ff4f15a443404342623b3e98c9344f8c985
             this.StokOutButton.Name = "StokOutButton";
             this.StokOutButton.Size = new System.Drawing.Size(157, 43);
             this.StokOutButton.TabIndex = 14;
@@ -78,7 +90,11 @@
             // StokInButton
             // 
             this.StokInButton.Location = new System.Drawing.Point(485, 273);
+<<<<<<< HEAD
             this.StokInButton.Margin = new System.Windows.Forms.Padding(4);
+=======
+            this.StokInButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+>>>>>>> 803a3ff4f15a443404342623b3e98c9344f8c985
             this.StokInButton.Name = "StokInButton";
             this.StokInButton.Size = new System.Drawing.Size(157, 38);
             this.StokInButton.TabIndex = 13;
@@ -91,7 +107,11 @@
             this.ItemButton.BackColor = System.Drawing.Color.Goldenrod;
             this.ItemButton.ForeColor = System.Drawing.Color.Transparent;
             this.ItemButton.Location = new System.Drawing.Point(485, 228);
+<<<<<<< HEAD
             this.ItemButton.Margin = new System.Windows.Forms.Padding(4);
+=======
+            this.ItemButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+>>>>>>> 803a3ff4f15a443404342623b3e98c9344f8c985
             this.ItemButton.Name = "ItemButton";
             this.ItemButton.Size = new System.Drawing.Size(157, 43);
             this.ItemButton.TabIndex = 12;
@@ -102,7 +122,11 @@
             // CompanyButton
             // 
             this.CompanyButton.Location = new System.Drawing.Point(485, 193);
+<<<<<<< HEAD
             this.CompanyButton.Margin = new System.Windows.Forms.Padding(4);
+=======
+            this.CompanyButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+>>>>>>> 803a3ff4f15a443404342623b3e98c9344f8c985
             this.CompanyButton.Name = "CompanyButton";
             this.CompanyButton.Size = new System.Drawing.Size(157, 38);
             this.CompanyButton.TabIndex = 11;
@@ -115,7 +139,11 @@
             this.CategoryButton.BackColor = System.Drawing.Color.OliveDrab;
             this.CategoryButton.ForeColor = System.Drawing.Color.Transparent;
             this.CategoryButton.Location = new System.Drawing.Point(485, 158);
+<<<<<<< HEAD
             this.CategoryButton.Margin = new System.Windows.Forms.Padding(4);
+=======
+            this.CategoryButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+>>>>>>> 803a3ff4f15a443404342623b3e98c9344f8c985
             this.CategoryButton.Name = "CategoryButton";
             this.CategoryButton.Size = new System.Drawing.Size(157, 41);
             this.CategoryButton.TabIndex = 10;
@@ -162,7 +190,11 @@
             this.Controls.Add(this.ItemButton);
             this.Controls.Add(this.CompanyButton);
             this.Controls.Add(this.CategoryButton);
+<<<<<<< HEAD
             this.Margin = new System.Windows.Forms.Padding(4);
+=======
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+>>>>>>> 803a3ff4f15a443404342623b3e98c9344f8c985
             this.Name = "DashboardFormUI";
             this.Text = "DashboardFormUI";
             this.ResumeLayout(false);
