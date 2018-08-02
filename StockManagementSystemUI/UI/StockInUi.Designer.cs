@@ -58,9 +58,10 @@
             // SaveButton
             // 
             this.SaveButton.BackColor = System.Drawing.Color.Transparent;
-            this.SaveButton.Location = new System.Drawing.Point(300, 272);
+            this.SaveButton.Location = new System.Drawing.Point(400, 335);
+            this.SaveButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.SaveButton.Name = "SaveButton";
-            this.SaveButton.Size = new System.Drawing.Size(95, 31);
+            this.SaveButton.Size = new System.Drawing.Size(127, 38);
             this.SaveButton.TabIndex = 17;
             this.SaveButton.Text = "Save";
             this.SaveButton.UseVisualStyleBackColor = false;
@@ -70,9 +71,10 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(77, 150);
+            this.label4.Location = new System.Drawing.Point(103, 185);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(108, 18);
+            this.label4.Size = new System.Drawing.Size(138, 24);
             this.label4.TabIndex = 15;
             this.label4.Text = "Recorder Lavel";
             // 
@@ -80,9 +82,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(62, 186);
+            this.label3.Location = new System.Drawing.Point(83, 229);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(123, 18);
+            this.label3.Size = new System.Drawing.Size(159, 24);
             this.label3.TabIndex = 14;
             this.label3.Text = "Available Quantity";
             // 
@@ -91,9 +94,10 @@
             this.companyComboBox.DataSource = this.companyBindingSource;
             this.companyComboBox.DisplayMember = "Name";
             this.companyComboBox.FormattingEnabled = true;
-            this.companyComboBox.Location = new System.Drawing.Point(217, 24);
+            this.companyComboBox.Location = new System.Drawing.Point(289, 30);
+            this.companyComboBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.companyComboBox.Name = "companyComboBox";
-            this.companyComboBox.Size = new System.Drawing.Size(178, 21);
+            this.companyComboBox.Size = new System.Drawing.Size(236, 24);
             this.companyComboBox.TabIndex = 13;
             this.companyComboBox.ValueMember = "Id";
             this.companyComboBox.SelectedIndexChanged += new System.EventHandler(this.companyComboBox_SelectedIndexChanged);
@@ -106,9 +110,10 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(105, 70);
+            this.label1.Location = new System.Drawing.Point(140, 86);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 18);
+            this.label1.Size = new System.Drawing.Size(85, 24);
             this.label1.TabIndex = 10;
             this.label1.Text = "Category";
             // 
@@ -117,9 +122,10 @@
             this.categoryComboBox.DataSource = this.categoryBindingSource;
             this.categoryComboBox.DisplayMember = "Name";
             this.categoryComboBox.FormattingEnabled = true;
-            this.categoryComboBox.Location = new System.Drawing.Point(217, 67);
+            this.categoryComboBox.Location = new System.Drawing.Point(289, 82);
+            this.categoryComboBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.categoryComboBox.Name = "categoryComboBox";
-            this.categoryComboBox.Size = new System.Drawing.Size(178, 21);
+            this.categoryComboBox.Size = new System.Drawing.Size(236, 24);
             this.categoryComboBox.TabIndex = 9;
             this.categoryComboBox.ValueMember = "Id";
             this.categoryComboBox.SelectedIndexChanged += new System.EventHandler(this.categoryComboBox_SelectedIndexChanged);
@@ -132,9 +138,10 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(105, 106);
+            this.label5.Location = new System.Drawing.Point(140, 130);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(80, 18);
+            this.label5.Size = new System.Drawing.Size(101, 24);
             this.label5.TabIndex = 18;
             this.label5.Text = "Item Name";
             // 
@@ -143,9 +150,10 @@
             this.itemComboBox.DataSource = this.itemBindingSource;
             this.itemComboBox.DisplayMember = "Name";
             this.itemComboBox.FormattingEnabled = true;
-            this.itemComboBox.Location = new System.Drawing.Point(217, 107);
+            this.itemComboBox.Location = new System.Drawing.Point(289, 132);
+            this.itemComboBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.itemComboBox.Name = "itemComboBox";
-            this.itemComboBox.Size = new System.Drawing.Size(178, 21);
+            this.itemComboBox.Size = new System.Drawing.Size(236, 24);
             this.itemComboBox.TabIndex = 19;
             this.itemComboBox.ValueMember = "Id";
             this.itemComboBox.SelectedIndexChanged += new System.EventHandler(this.itemComboBox_SelectedIndexChanged);
@@ -158,44 +166,51 @@
             // 
             this.reOrderLabel.AutoSize = true;
             this.reOrderLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.reOrderLabel.Location = new System.Drawing.Point(214, 152);
+            this.reOrderLabel.Location = new System.Drawing.Point(285, 187);
+            this.reOrderLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.reOrderLabel.Name = "reOrderLabel";
-            this.reOrderLabel.Size = new System.Drawing.Size(0, 16);
+            this.reOrderLabel.Size = new System.Drawing.Size(62, 20);
             this.reOrderLabel.TabIndex = 20;
+            this.reOrderLabel.Text = "<view>";
             // 
             // availableQuantityLabel
             // 
             this.availableQuantityLabel.AutoSize = true;
             this.availableQuantityLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.availableQuantityLabel.Location = new System.Drawing.Point(214, 188);
+            this.availableQuantityLabel.Location = new System.Drawing.Point(285, 231);
+            this.availableQuantityLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.availableQuantityLabel.Name = "availableQuantityLabel";
-            this.availableQuantityLabel.Size = new System.Drawing.Size(0, 16);
+            this.availableQuantityLabel.Size = new System.Drawing.Size(62, 20);
             this.availableQuantityLabel.TabIndex = 21;
+            this.availableQuantityLabel.Text = "<view>";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(73, 226);
+            this.label8.Location = new System.Drawing.Point(97, 278);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(112, 18);
+            this.label8.Size = new System.Drawing.Size(139, 24);
             this.label8.TabIndex = 22;
             this.label8.Text = "Stok In Quantity";
             // 
             // stokInTextBox
             // 
             this.stokInTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.stokInTextBox.Location = new System.Drawing.Point(217, 222);
+            this.stokInTextBox.Location = new System.Drawing.Point(289, 273);
+            this.stokInTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.stokInTextBox.Name = "stokInTextBox";
-            this.stokInTextBox.Size = new System.Drawing.Size(178, 22);
+            this.stokInTextBox.Size = new System.Drawing.Size(236, 26);
             this.stokInTextBox.TabIndex = 23;
             // 
             // CancelButton
             // 
             this.CancelButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CancelButton.Location = new System.Drawing.Point(174, 278);
+            this.CancelButton.Location = new System.Drawing.Point(232, 342);
+            this.CancelButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.CancelButton.Name = "CancelButton";
-            this.CancelButton.Size = new System.Drawing.Size(89, 25);
+            this.CancelButton.Size = new System.Drawing.Size(119, 31);
             this.CancelButton.TabIndex = 35;
             this.CancelButton.Text = "Cancel";
             this.CancelButton.UseVisualStyleBackColor = true;
@@ -217,9 +232,11 @@
             this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.SaveButton);
-            this.groupBox1.Location = new System.Drawing.Point(90, 12);
+            this.groupBox1.Location = new System.Drawing.Point(120, 15);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(479, 330);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Size = new System.Drawing.Size(639, 406);
             this.groupBox1.TabIndex = 36;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "StockIn";
@@ -228,9 +245,10 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(105, 29);
+            this.label2.Location = new System.Drawing.Point(140, 36);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(66, 16);
+            this.label2.Size = new System.Drawing.Size(79, 20);
             this.label2.TabIndex = 36;
             this.label2.Text = "Company";
             // 
@@ -240,10 +258,11 @@
             // 
             // StockInUi
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(712, 354);
+            this.ClientSize = new System.Drawing.Size(949, 436);
             this.Controls.Add(this.groupBox1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "StockInUi";
             this.Text = " ";
             this.Load += new System.EventHandler(this.StockInUi_Load);

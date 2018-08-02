@@ -84,6 +84,7 @@ namespace StockManagementSystemUI.StockIn.UI
            if (isAdded)
            {
                MessageBox.Show("Successfully Added. ");
+               stokInTextBox.Clear();
            }
            else
            {

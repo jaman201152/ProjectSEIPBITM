@@ -54,6 +54,7 @@ namespace StockManagementSystemUI.Category.UI
                 if (isAdded)
                 {
                     MessageBox.Show("Successfuly Saved.");
+                    nameTextBox.Clear();
                     CategoryLode();
                     return;
 

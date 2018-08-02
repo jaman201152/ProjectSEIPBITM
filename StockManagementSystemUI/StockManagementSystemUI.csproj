@@ -47,13 +47,16 @@
     <Compile Include="BLL\CategoryManager.cs" />
     <Compile Include="BLL\ItemManager.cs" />
     <Compile Include="BLL\StockInManager.cs" />
+    <Compile Include="BLL\StockOutManager.cs" />
     <Compile Include="DAL\CategoryRepository.cs" />
     <Compile Include="DAL\ItemRepository.cs" />
     <Compile Include="DAL\StockInRepository.cs" />
+    <Compile Include="DAL\StockOutRepository.cs" />
     <Compile Include="Model\Common.cs" />
     <Compile Include="Model\Item.cs" />
     <Compile Include="Model\ItemCreateVM.cs" />
     <Compile Include="Model\StockIn.cs" />
+    <Compile Include="Model\StockOut.cs" />
     <Compile Include="UI\CetegoryFormUi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -96,11 +99,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="UI\SearchAndView.cs">
+    <Compile Include="UI\SearchAndViewItem.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="UI\SearchAndView.Designer.cs">
-      <DependentUpon>SearchAndView.cs</DependentUpon>
+    <Compile Include="UI\SearchAndViewItem.Designer.cs">
+      <DependentUpon>SearchAndViewItem.cs</DependentUpon>
     </Compile>
     <Compile Include="UI\StockInUi.cs">
       <SubType>Form</SubType>
@@ -134,8 +137,8 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="UI\SearchAndView.resx">
-      <DependentUpon>SearchAndView.cs</DependentUpon>
+    <EmbeddedResource Include="UI\SearchAndViewItem.resx">
+      <DependentUpon>SearchAndViewItem.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UI\StockInUi.resx">
       <DependentUpon>StockInUi.cs</DependentUpon>

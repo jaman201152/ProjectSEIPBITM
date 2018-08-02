@@ -57,6 +57,7 @@ namespace StockManagementSystemUI.Company.UI
                 if (isAdded)
                 {
                     MessageBox.Show("Successfully Saved.");
+                    nameTextBox.Clear();
                     CompanyLode();
                     return;
 

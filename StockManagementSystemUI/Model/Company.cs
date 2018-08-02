@@ -8,7 +8,7 @@ namespace StockManagementSystemUI.Model
 {
     public class Company
     {
-        public int Id { get; set; }
+        public long Id { get; set; }
         public string Name { get; set; }
     }
 }
