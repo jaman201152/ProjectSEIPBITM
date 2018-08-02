@@ -6,9 +6,14 @@ using System.Threading.Tasks;
 
 namespace StockManagementSystemUI.Model
 {
-    public class Company
+   public class StockOut
     {
+
         public long Id { get; set; }
-        public string Name { get; set; }
+        public long CategoryId { get; set; }
+        public long CampanyId { get; set; }
+        public long ItemId { get; set; }
+        public int AvailableQuantity { get; set; }
+
     }
 }
