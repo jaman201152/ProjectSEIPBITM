@@ -29,7 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+<<<<<<< HEAD
             this.stockOutQuantityTextBox = new System.Windows.Forms.TextBox();
+=======
+            this.stokInTextBox = new System.Windows.Forms.TextBox();
+>>>>>>> 87eab73d3446977816d7eefdc0fe8f147edc38f5
             this.label8 = new System.Windows.Forms.Label();
             this.availableQuantityLabel = new System.Windows.Forms.Label();
             this.reOrderLabel = new System.Windows.Forms.Label();
@@ -45,11 +49,15 @@
             this.label1 = new System.Windows.Forms.Label();
             this.categoryComboBox = new System.Windows.Forms.ComboBox();
             this.categoryBindingSource = new System.Windows.Forms.BindingSource(this.components);
+<<<<<<< HEAD
             this.itemStockOutDataGridView = new System.Windows.Forms.DataGridView();
             this.ItemId = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ItemName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CompanyName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.StockOutQuantity = new System.Windows.Forms.DataGridViewTextBoxColumn();
+=======
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+>>>>>>> 87eab73d3446977816d7eefdc0fe8f147edc38f5
             this.SellButton = new System.Windows.Forms.Button();
             this.LostButton = new System.Windows.Forms.Button();
             this.DamageButton = new System.Windows.Forms.Button();
@@ -58,18 +66,31 @@
             ((System.ComponentModel.ISupportInitialize)(this.itemBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.companyBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.categoryBindingSource)).BeginInit();
+<<<<<<< HEAD
             ((System.ComponentModel.ISupportInitialize)(this.itemStockOutDataGridView)).BeginInit();
+=======
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+>>>>>>> 87eab73d3446977816d7eefdc0fe8f147edc38f5
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // stockOutQuantityTextBox
             // 
+<<<<<<< HEAD
             this.stockOutQuantityTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.stockOutQuantityTextBox.Location = new System.Drawing.Point(207, 276);
             this.stockOutQuantityTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.stockOutQuantityTextBox.Name = "stockOutQuantityTextBox";
             this.stockOutQuantityTextBox.Size = new System.Drawing.Size(208, 26);
             this.stockOutQuantityTextBox.TabIndex = 36;
+=======
+            this.stokInTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.stokInTextBox.Location = new System.Drawing.Point(207, 276);
+            this.stokInTextBox.Margin = new System.Windows.Forms.Padding(4);
+            this.stokInTextBox.Name = "stokInTextBox";
+            this.stokInTextBox.Size = new System.Drawing.Size(208, 26);
+            this.stokInTextBox.TabIndex = 36;
+>>>>>>> 87eab73d3446977816d7eefdc0fe8f147edc38f5
             // 
             // label8
             // 
@@ -90,9 +111,14 @@
             this.availableQuantityLabel.Location = new System.Drawing.Point(203, 228);
             this.availableQuantityLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.availableQuantityLabel.Name = "availableQuantityLabel";
+<<<<<<< HEAD
             this.availableQuantityLabel.Size = new System.Drawing.Size(62, 20);
             this.availableQuantityLabel.TabIndex = 34;
             this.availableQuantityLabel.Text = "<view>";
+=======
+            this.availableQuantityLabel.Size = new System.Drawing.Size(0, 20);
+            this.availableQuantityLabel.TabIndex = 34;
+>>>>>>> 87eab73d3446977816d7eefdc0fe8f147edc38f5
             // 
             // reOrderLabel
             // 
@@ -101,9 +127,14 @@
             this.reOrderLabel.Location = new System.Drawing.Point(203, 192);
             this.reOrderLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.reOrderLabel.Name = "reOrderLabel";
+<<<<<<< HEAD
             this.reOrderLabel.Size = new System.Drawing.Size(62, 20);
             this.reOrderLabel.TabIndex = 33;
             this.reOrderLabel.Text = "<view>";
+=======
+            this.reOrderLabel.Size = new System.Drawing.Size(0, 20);
+            this.reOrderLabel.TabIndex = 33;
+>>>>>>> 87eab73d3446977816d7eefdc0fe8f147edc38f5
             // 
             // itemComboBox
             // 
@@ -152,7 +183,11 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.label4.Location = new System.Drawing.Point(32, 192);
+=======
+            this.label4.Location = new System.Drawing.Point(25, 192);
+>>>>>>> 87eab73d3446977816d7eefdc0fe8f147edc38f5
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(123, 20);
@@ -228,6 +263,7 @@
             // categoryBindingSource
             // 
             this.categoryBindingSource.DataSource = typeof(StockManagementSystemUI.Model.Category);
+<<<<<<< HEAD
             // 
             // itemStockOutDataGridView
             // 
@@ -267,19 +303,34 @@
             this.CompanyName.HeaderText = "Company";
             this.CompanyName.Name = "CompanyName";
             this.CompanyName.ReadOnly = true;
+=======
+>>>>>>> 87eab73d3446977816d7eefdc0fe8f147edc38f5
             // 
             // StockOutQuantity
             // 
+<<<<<<< HEAD
             this.StockOutQuantity.DataPropertyName = "StockOutQuantity";
             this.StockOutQuantity.HeaderText = "Quantity";
             this.StockOutQuantity.Name = "StockOutQuantity";
             this.StockOutQuantity.ReadOnly = true;
+=======
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(109, 409);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(853, 183);
+            this.dataGridView1.TabIndex = 37;
+>>>>>>> 87eab73d3446977816d7eefdc0fe8f147edc38f5
             // 
             // SellButton
             // 
             this.SellButton.BackColor = System.Drawing.Color.Transparent;
             this.SellButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.SellButton.Location = new System.Drawing.Point(378, 664);
+=======
+            this.SellButton.Location = new System.Drawing.Point(381, 623);
+>>>>>>> 87eab73d3446977816d7eefdc0fe8f147edc38f5
             this.SellButton.Margin = new System.Windows.Forms.Padding(4);
             this.SellButton.Name = "SellButton";
             this.SellButton.Size = new System.Drawing.Size(128, 38);
@@ -291,7 +342,11 @@
             // 
             this.LostButton.BackColor = System.Drawing.Color.Transparent;
             this.LostButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.LostButton.Location = new System.Drawing.Point(703, 664);
+=======
+            this.LostButton.Location = new System.Drawing.Point(699, 624);
+>>>>>>> 87eab73d3446977816d7eefdc0fe8f147edc38f5
             this.LostButton.Margin = new System.Windows.Forms.Padding(4);
             this.LostButton.Name = "LostButton";
             this.LostButton.Size = new System.Drawing.Size(128, 38);
@@ -303,7 +358,11 @@
             // 
             this.DamageButton.BackColor = System.Drawing.Color.Transparent;
             this.DamageButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.DamageButton.Location = new System.Drawing.Point(539, 664);
+=======
+            this.DamageButton.Location = new System.Drawing.Point(547, 622);
+>>>>>>> 87eab73d3446977816d7eefdc0fe8f147edc38f5
             this.DamageButton.Margin = new System.Windows.Forms.Padding(4);
             this.DamageButton.Name = "DamageButton";
             this.DamageButton.Size = new System.Drawing.Size(128, 38);
@@ -314,7 +373,11 @@
             // CancelButton
             // 
             this.CancelButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+<<<<<<< HEAD
             this.CancelButton.Location = new System.Drawing.Point(875, 664);
+=======
+            this.CancelButton.Location = new System.Drawing.Point(860, 623);
+>>>>>>> 87eab73d3446977816d7eefdc0fe8f147edc38f5
             this.CancelButton.Margin = new System.Windows.Forms.Padding(4);
             this.CancelButton.Name = "CancelButton";
             this.CancelButton.Size = new System.Drawing.Size(103, 38);
@@ -357,7 +420,11 @@
             this.Controls.Add(this.DamageButton);
             this.Controls.Add(this.LostButton);
             this.Controls.Add(this.SellButton);
+<<<<<<< HEAD
             this.Controls.Add(this.itemStockOutDataGridView);
+=======
+            this.Controls.Add(this.dataGridView1);
+>>>>>>> 87eab73d3446977816d7eefdc0fe8f147edc38f5
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "StockOutUi";
             this.Text = "StokOutUi";
@@ -365,7 +432,11 @@
             ((System.ComponentModel.ISupportInitialize)(this.itemBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.companyBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.categoryBindingSource)).EndInit();
+<<<<<<< HEAD
             ((System.ComponentModel.ISupportInitialize)(this.itemStockOutDataGridView)).EndInit();
+=======
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+>>>>>>> 87eab73d3446977816d7eefdc0fe8f147edc38f5
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
@@ -396,9 +467,12 @@
         private System.Windows.Forms.BindingSource itemBindingSource;
         private System.Windows.Forms.BindingSource companyBindingSource;
         private System.Windows.Forms.BindingSource categoryBindingSource;
+<<<<<<< HEAD
         private System.Windows.Forms.DataGridViewTextBoxColumn ItemId;
         private System.Windows.Forms.DataGridViewTextBoxColumn ItemName;
         private System.Windows.Forms.DataGridViewTextBoxColumn CompanyName;
         private System.Windows.Forms.DataGridViewTextBoxColumn StockOutQuantity;
+=======
+>>>>>>> 87eab73d3446977816d7eefdc0fe8f147edc38f5
     }
 }

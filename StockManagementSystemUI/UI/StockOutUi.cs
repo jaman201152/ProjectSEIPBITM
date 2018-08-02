@@ -102,6 +102,7 @@ namespace StockManagementSystemUI.StokOut.UI
             _con.Close();
 
         }
+<<<<<<< HEAD
 
         List<StockOut> stockOutList = new List<StockOut>();
         StockOut stockOut = new StockOut();
@@ -131,5 +132,7 @@ namespace StockManagementSystemUI.StokOut.UI
 
 
         }
+=======
+>>>>>>> 87eab73d3446977816d7eefdc0fe8f147edc38f5
     }
 }

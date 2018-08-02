@@ -100,7 +100,11 @@
             // 
             // SearchButton
             // 
+<<<<<<< HEAD
             this.SearchButton.Location = new System.Drawing.Point(206, 151);
+=======
+            this.SearchButton.Location = new System.Drawing.Point(179, 154);
+>>>>>>> 87eab73d3446977816d7eefdc0fe8f147edc38f5
             this.SearchButton.Name = "SearchButton";
             this.SearchButton.Size = new System.Drawing.Size(121, 36);
             this.SearchButton.TabIndex = 4;

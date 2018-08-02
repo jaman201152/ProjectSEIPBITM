@@ -3,7 +3,15 @@ using StockManagementSystemUI.Company.UI;
 using StockManagementSystemUI.Item.UI;
 using StockManagementSystemUI.StockIn.UI;
 using StockManagementSystemUI.StokOut.UI;
+<<<<<<< HEAD
 using StockManagementSystemUI.UI;
+=======
+<<<<<<< HEAD
+using StockManagementSystemUI.UI;
+=======
+using StockManagementSystemUI.SearchAndView.UI;
+>>>>>>> 803a3ff4f15a443404342623b3e98c9344f8c985
+>>>>>>> 87eab73d3446977816d7eefdc0fe8f147edc38f5
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -62,6 +70,10 @@ namespace StockManagementSystemUI
 
         private void SearchButton_Click(object sender, EventArgs e)
         {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> 87eab73d3446977816d7eefdc0fe8f147edc38f5
             this.Hide();
             SearchAndViewItem seearchItem = new SearchAndViewItem();
             seearchItem.ShowDialog();
@@ -70,5 +82,13 @@ namespace StockManagementSystemUI
         }
 
     
+<<<<<<< HEAD
+=======
+=======
+           
+            
+        }
+>>>>>>> 803a3ff4f15a443404342623b3e98c9344f8c985
+>>>>>>> 87eab73d3446977816d7eefdc0fe8f147edc38f5
     }
 }

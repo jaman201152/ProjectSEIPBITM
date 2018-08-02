@@ -13,6 +13,7 @@ namespace StockManagementSystemUI.Model
         public long CategoryId { get; set; }
         public long CampanyId { get; set; }
         public long ItemId { get; set; }
+<<<<<<< HEAD
         public int StockOutQuantity { get; set; }
         public DateTime StockOutDate { get; set; }
 
@@ -21,5 +22,9 @@ namespace StockManagementSystemUI.Model
           Damage=2,
           Lose=3
        } 
+=======
+        public int AvailableQuantity { get; set; }
+
+>>>>>>> 87eab73d3446977816d7eefdc0fe8f147edc38f5
     }
 }
